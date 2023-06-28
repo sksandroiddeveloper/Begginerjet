@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
@@ -41,16 +42,22 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Greeting(name: String) {
-    Column(modifier = Modifier.background(Color.Red), horizontalAlignment = Alignment.End) {
+    Column(modifier = Modifier.background(Color.Red).fillMaxSize(), horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.Center
+    ) {
 
-        Text(text = "HI $name!", color = Color.Blue, fontSize = 21.sp, modifier = Modifier
+        Text(
+            text = "HI $name!", color = Color.Blue, fontSize = 21.sp, modifier = Modifier
 //            .background(
 //                Color.DarkGray
 //            )
 //            .padding(15.dp)
 //            .background(Color.LightGray)
-)
-        Text(text = " what is going on it ! ", color = Color.Blue, fontSize = 21.sp, modifier = Modifier
+        )
+        Text(
+            text = " what is going on it ! ",
+            color = Color.Blue,
+            fontSize = 21.sp,
+            modifier = Modifier
 //            .background(
 //                Color.DarkGray
 //            )
@@ -59,7 +66,7 @@ fun Greeting(name: String) {
         )
 
     }
-    }
+}
 
 
 @Preview(showBackground = true)
