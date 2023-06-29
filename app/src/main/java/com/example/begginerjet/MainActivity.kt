@@ -42,11 +42,11 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Greeting(name: String) {
-    Column(modifier = Modifier.background(Color.Red).fillMaxSize(), horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.Center
+    Column(modifier = Modifier.background(Color.DarkGray).fillMaxSize(), horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.Center
     ) {
 
         Text(
-            text = "HI $name!", color = Color.Blue, fontSize = 21.sp, modifier = Modifier
+            text = "HI $name!", color = Color.White, fontSize = 21.sp, modifier = Modifier
 //            .background(
 //                Color.DarkGray
 //            )
@@ -55,7 +55,7 @@ fun Greeting(name: String) {
         )
         Text(
             text = " what is going on it ! ",
-            color = Color.Blue,
+            color = Color.White,
             fontSize = 21.sp,
             modifier = Modifier
 //            .background(
